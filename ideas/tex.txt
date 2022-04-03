@@ -1,0 +1,467 @@
+ideas = {
+
+	country = {
+		dust_bowl = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			picture = great_depression
+			modifier = {
+				political_power_cost = 0.40
+				consumer_goods_factor = -0.20
+				conscription_factor = -0.25
+			}
+		}
+		
+		texan_identity = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				drift_defence_factor = 0.25
+				conscription_factor = 0.20
+			}
+		}
+		
+		aut = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				political_power_gain = 0.3
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+		
+		new_parties_rise = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				democratic_drift = -0.0005
+			}
+		}
+		
+		strike = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRA_factory_strikes
+			modifier = {
+				industrial_capacity_factory  = -0.6
+				industrial_capacity_dockyard = -0.6
+				production_speed_buildings_factor = -0.6
+				communism_drift = 0.004
+			}
+		}
+		
+		red_star_hope = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = home_of_the_revolution
+			modifier = {
+				industrial_capacity_factory  = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		tamc = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = tamc
+			modifier = {
+				conscription_factor = 0.005
+			}
+		}
+		
+		texan_brotherhood = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = tamc
+			modifier = {
+				army_defence_factor = 0.10
+				#unity_factor = 0.10
+			}
+		}
+		
+		texas_youth_division = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = tamc
+			modifier = {
+				conscription_factor = 0.01
+				army_org_factor = 0.08
+			}
+		}
+		
+		lonsetar_times = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = tamc
+			modifier = {
+				encryption = 1
+				political_power_factor = 0.015
+			}
+		}
+		
+		faith_in_the_lonestar = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = tamc
+			modifier = {
+				army_core_defence_factor = 0.08
+				max_planning = 0.015
+			}
+		}
+		
+		national_think_tank = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = tamc
+			modifier = {
+				research_time_factor = -0.05
+			}
+		}
+		
+		moderate_anglo_pushback = {
+			allowed = {
+				original_tag = TEX
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = tamc
+			modifier = {
+				#unity_factor = 0.05
+			}
+		}
+		
+	}
+
+	army_chief = {
+		
+	
+		john_pierce = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { army_chief_drill_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+
+		
+		bruce_palmer = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { army_commando_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		dwight_eisenhower = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}			
+	}
+	air_chief = {
+		
+		ira_eaker = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { air_strategic_bombing_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	navy_chief = {
+	
+		samuel_dealey = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { navy_submarine_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		chester_nimitz = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+			
+	}
+	high_command = {
+		james_holloway = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		edwin_walker = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		lucian_truscott = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { army_cavalry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		john_cannon = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+				
+		claire_lee_chennault = {
+			
+			
+			allowed = {
+				original_tag = TEX
+			}
+			
+
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+	}		
+}

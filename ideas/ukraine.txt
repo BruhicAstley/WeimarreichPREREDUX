@@ -1,0 +1,93 @@
+ideas = {
+
+	country = {
+		ukrainian_war_of_independence = {
+			allowed = {
+				original_tag = UKR
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+			picture = GFX_idea_ukrainian_war_for_independence
+			modifier = {
+				political_power_cost = 0.40
+				consumer_goods_factor = -0.20
+				conscription_factor = -0.25
+			}
+		}
+		
+		ukrainian_identity = {
+			allowed = {
+				original_tag = UKR
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				drift_defence_factor = 0.25
+				conscription_factor = 0.20
+			}
+		}
+		
+		aut = {
+			allowed = {
+				original_tag = UKR
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				political_power_gain = 0.3
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+		
+		
+		american_support = {
+			allowed = {
+				original_tag = UKR
+			}
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = idea_generic_usa_conflict
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				drift_defence_factor = 0.25
+				conscription_factor = 0.20
+			}
+		}
+		

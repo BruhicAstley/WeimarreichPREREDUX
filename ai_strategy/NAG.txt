@@ -1,0 +1,23 @@
+NAGbies_bad = {
+	enable = {
+		original_tag = PAR
+		original_tag = DOM
+		original_tag = ITA
+		original_tag = JAP
+		country_exists = NAG
+	}
+	abort = {
+		NOT = { country_exists = NAG }
+	}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NAG"
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "NAG"
+		value = -1000
+	}
+}

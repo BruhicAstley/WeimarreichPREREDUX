@@ -1,0 +1,22 @@
+leader_traits = {
+	dislikes_soviets = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "SOV"			
+			value = 100
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		liberal_agenda = {
+		random = no
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

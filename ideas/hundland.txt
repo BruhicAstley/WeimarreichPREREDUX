@@ -1,0 +1,599 @@
+ideas = { 
+
+country = {
+	good_boy = {
+
+	allowed = {
+		original_tag = HUD
+	}
+
+	allowed_civil_war = {
+		has_government = democratic
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		army_org_Factor = 0.06
+		army_morale_factor = 0.1
+	}
+	}
+	
+	gw_industry = {
+
+	allowed = {
+		original_tag = HUD
+	}
+
+	allowed_civil_war = {
+		has_government = democratic
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		production_speed_infrastructure_factor = 0.2
+		unity_factor = 0.10
+		conversion_cost_civ_to_mil_factor= -0.2
+	}
+	}
+	
+	hundish_army_overhaul = {
+
+	allowed = {
+		original_tag = HUD
+	}
+
+	allowed_civil_war = {
+		has_government = democratic
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		conscription = 0.02
+		training_time_army_factor = -0.2
+		army_org_Factor = 0.02
+	}
+	}
+	
+	usa_raids_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = gfx/interface/ideas/americanraid.tga
+	
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+	canada_raids_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = gfx/interface/ideas/canadaraid.tga
+	
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
+	catshelp_idea = {
+						
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = gfx/interface/ideas/catshelp.tga
+	
+			modifier = {
+				conscription = 0.03
+			}
+		}	
+		
+	hudland_diamond_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+						
+			removal_cost = -1
+
+			picture = gfx/interface/ideas/diamonddogs.tga
+	
+			modifier = {
+				conscription = 0.04
+				training_time_army_factor = -0.1
+				army_morale_factor = 0.2
+			}
+		}
+
+	elite_dogs_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+						
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.01
+				army_morale_factor = 0.2
+			}
+		}	
+
+	hudland_wolfpack_focus	= {
+			
+			
+			allowed = {
+				always = no
+			}
+						
+			removal_cost = -1
+
+			picture = gfx/interface/ideas/wolfpac.tga
+	
+			modifier = {
+				army_morale_factor = 0.2
+				training_time_army_factor = -0.2
+			}
+		}		
+		
+	for_freedom = 	{
+			
+			allowed = {
+				always = no
+			}
+						
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.01
+			}
+		}
+	dogs_of_war_focus = {
+	
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = gfx/interface/ideas/dogs_of_war.tga
+			
+			modifier = {
+				army_morale_factor = 0.4
+				training_time_army_factor = -0.3
+			}
+	}		
+}
+		
+
+
+political_advisor = {
+	winston_furchill = {
+	picture = gfx/interface/ideas/demodog.tga
+	allowed = {
+			original_tag = "HUD"
+			}
+			
+
+			
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+	karl_barx = {
+	picture = gfx/interface/ideas/commiedog.tga		
+			
+			allowed = {
+				original_tag = "HUD"
+			}
+			
+
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+	blondi_dog = {
+	picture = gfx/interface/ideas/fascistdog.tga
+			
+			
+			allowed = {
+				original_tag = "HUD"
+			}
+			
+
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	rintintin = {
+	picture = gfx/interface/ideas/rintintin.tga
+
+			allowed = {
+				original_tag = "HUD"
+			}
+			traits = { silent_workhorse}
+	}
+	
+	shiloh = {
+	picture = gfx/interface/ideas/shiloh.tga
+	
+			allowed = {
+				original_tag = "HUD"
+			}
+			traits = { compassionate_gentleman }
+	}
+	debugdog = {
+	picture = gfx/interface/ideas/debugdog.tga
+	
+			allowed = {
+				original_tag = "HUD"
+			}
+			traits = { prince_of_terror }
+	}
+	gabe = {
+	picture = gfx/interdace/ideas/gabe.tga
+
+			allowed = {
+				original_tag = "HUD"
+			}
+			traits = { smooth_talking_charmer }
+	}
+
+}
+	
+	army_chief = {
+
+		HUD_aco2 = {
+
+			picture = gfx/interface/ideas/1.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}		
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HUD_acd2 = {
+
+			picture = gfx/interface/ideas/2.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HUD_army1 = {
+
+			picture = gfx/interface/ideas/army1.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HUD_army2 = {
+
+			picture = gfx/interface/ideas/army2.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		HUD_acr = {
+
+			picture = gfx/interface/ideas/3.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HUD_acgs = {
+
+			picture = gfx/interface/ideas/4.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		HUD_nccr = {
+
+			picture = gfx/interface/ideas/5.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		HUD_navy1 = {
+
+			picture = gfx/interface/ideas/5.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+					
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		HUD_navy2 = {
+
+			picture = gfx/interface/ideas/5.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+					
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		HUD_navy3 = {
+
+			picture = gfx/interface/ideas/5.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		
+	}
+
+	high_command = {
+
+		HUD_ar = {
+			
+			picture = gfx/interface/ideas/7.tga
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		HUD_ai2 = {
+
+			
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HUD_aa2 = {
+
+			
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HUD_acas = {
+
+			picture = generic_air_african_2
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		HUD_ncs = {
+
+			picture = generic_navy_african_2
+			
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}	
+
+	theorist = {
+		HUD_mt = {
+			
+			picture = generic_army_african_2
+
+			allowed = {
+				original_tag =	HUD
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		doge = {
+			picture = generic_army_african_2
+			
+			allowed = {
+				original_tag = HUD
+			}
+			
+			research_bonus = {
+				nuclear = 0.10
+			}
+			
+			traits = { nuclear_scientist }
+		
+		}
+		
+		
+		
+		
+
+	}
+	
+	
+		
+}
